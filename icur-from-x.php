@@ -4,7 +4,7 @@ Plugin Name: icur-from-x
 Description: Redirects to custom template when coming from configured hostnames
 */
 
-define('ICUR_FROM_X_DEBUG', true); // Set to true to enable debug output
+define('ICUR_FROM_X_DEBUG', false); // Set to true to enable debug output
 
 function icur_from_x_register_settings()
 {
