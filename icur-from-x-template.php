@@ -57,29 +57,41 @@
         font-weight: bold;
         border: 6px dotted #d86624;
     }
+
+    .icur-from-x-sitenote p {
+        padding: .5em;
+    }
 </style>
 <body>
 
 <h1>ICUR From X</h1>
 
-<p class="icur-from-x-note">
+<div class="icur-from-x-note">
     The owner of this website is letting you know about where you clicked on the link that brought you here. Please contingue reading, and have a nice day!
-</p>
-<p class="icur-from-x-note">
+</div>
+<div class="icur-from-x-note">
     Visitors following links shared or distributed on networks originating from by the  following hostnames will see this message:
-</p>
-<p class="icur-from-x-hostnames">
+</div>
+<div class="icur-from-x-hostnames">
 <?php echo get_option('icur_from_x_hostnames'); ?>
-</p>
+</div>
 
 <h2>Site Note!</h2>
 
-<p class="icur-from-x-sitenote">
+<div class="icur-from-x-sitenote">
 <?php echo get_option('icur_from_x_custom_html'); ?>
-</p>
+</div>
 
-<p>To view the orginal content, please copy the Universal Resource Locator (URL) and paste it into your browser.</p>
+<div class="icur-from-x-note">
+    <p>
+        This content was originally published on the following website.
+    </p>
+    <p>
+        To view the orginal content, please copy the Universal Resource Locator (URL) below and paste it into your browser.
+    </p>
+</div>
 
+<div class="icur-from-x-sitenote">
 <?php
 if (have_posts()) :
     while (have_posts()) : the_post();
@@ -89,6 +101,7 @@ if (have_posts()) :
     endwhile;
 endif;
 ?>
+</div>
 
 </body>
 </html>
