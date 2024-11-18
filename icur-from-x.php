@@ -8,7 +8,7 @@ define('ICUR_FROM_X_DEBUG', true); // Set to true to enable debug output
 
 function icur_from_x_register_settings()
 {
-    add_option('icur_from_x_hostnames', 'x.com');
+    add_option('icur_from_x_hostnames', '');
     add_option('icur_from_x_custom_html', '');
     register_setting('icur_from_x_options_group', 'icur_from_x_hostnames', 'sanitize_text_field');
     register_setting('icur_from_x_options_group', 'icur_from_x_custom_html', 'wp_kses_post');
