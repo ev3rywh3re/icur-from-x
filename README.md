@@ -29,3 +29,5 @@ The ICUR From X plugin allows you to redirect visitors to a custom template when
 2. Enter the hostnames (comma-separated) that you want to redirect from.
 3. Add any custom HTML content you want to display on the custom template.
 4. Save the settings.
+
+End.
